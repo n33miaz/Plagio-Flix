@@ -1,0 +1,257 @@
+body {
+    background-color: rgb(10, 10, 10);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#pesquisa {
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    box-shadow: 3px 4px 4px rgb(5, 5, 5);
+}
+
+#botao-pesquisa {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    margin-left: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#botao-voltar {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    margin-right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#busca {
+    margin: 15px;
+    width: 255px;
+    height: 25px;
+    border-radius: 15px;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 2px white;
+}
+
+#botao-logo {
+    position: fixed;
+    top: 14px;
+    right: 15px;
+    margin-left: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #FF0000; 
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#cabeçalho {
+    position: fixed;
+    width: 100%;
+    height: 57px;
+    background-color: black;
+    z-index: 0;
+    box-shadow: 3px 4px 4px rgb(5, 5, 5);
+}
+
+.linha {
+    width: 500%;
+    height: 2px;
+    margin-top: 0px;
+    background-color: white;
+}
+
+#texto-cat {
+    margin: 25px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF0000;
+}
+
+.categoria {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white; 
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.filmes {
+    position: relative;
+    top: 50px;
+    width: 350px;
+    height: 100%;
+    margin: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+#secao-filmes {
+    color: white;
+}
+
+#categorias {
+    align-items: center;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white; 
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#categoria {
+    position: absolute;
+    text-align: center;
+    top: 135px;
+    left: 35px;
+    width: 300px;
+    height: 350px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#categoria::-webkit-scrollbar {
+    color: transparent;
+}
+
+#filtro-form {
+    display: flex;
+    height: 100%;
+}
+
+#botao-filtrar {
+    position: absolute;
+    top: 500px;
+    left: 25px;
+    width: 300px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.borda-produto {
+    width: 165px;
+    height: 345px;
+    box-shadow: 0px 3px 7px rgb(3, 3, 3);
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 20px;
+    padding: 0;
+}
+
+.invisivel {
+    position: relative;
+    width: 210px;
+    height: 250px;
+}
+
+.botao-produto {
+    position: absolute;
+    width: 165px;
+    height: 345px;
+    border-radius: 15px;
+    border-width: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 60%;
+}
+.botao-produto:hover {
+    background-color: rgb(40, 40, 40);
+    opacity: 10%;
+}
+.botao-produto:active {
+    background-color: rgb(40, 40, 40);
+    opacity: 20%;
+}
+
+.imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+.nome {
+    text-align: center;
+    margin: 5px;
+}
+
+.texto-produto {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+}
+
+.avaliacao {
+    text-align: center;
+    margin: 0;
+}
+
+.nota {
+    text-align: center;
+    margin: 0;
+}
