@@ -1,0 +1,161 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    margin: 0px;
+    padding: 0;
+    height: 100%
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 475px;
+    background-color: rgb(10, 10, 10);
+    border: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(15, 15, 15);
+}
+
+.fechado {
+    width: 375px;
+    height: 475px;
+}
+
+#cadastro-e-iniciar-sessao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#titulo-cadastro {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
+}
+
+#entrada-cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-iniciar-sessao {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
+}
+
+#entrada-iniciar-sessao {
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada {
+    display: flex;
+    width: 325px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border-radius: 15px; 
+    border: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#botao-ir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 35px;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 15px; 
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+#botao-ir:hover {
+    opacity: 90%;
+}
+#botao-ir:active {
+    opacity: 70%;
+}
+
+#troca {
+    margin: 10px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+#troca:hover {
+    opacity: 90%;
+}
+#troca:active {
+    opacity: 70%;
+}
+
+#troca-inversa {
+    margin: 10px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+#troca-inversa:hover {
+    opacity: 90%;
+}
+#troca-inversa:active {
+    opacity: 70%;
+}
+
+#botao-voltar {
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    padding: none;
+    cursor: pointer;
+    z-index: 10;
+}
