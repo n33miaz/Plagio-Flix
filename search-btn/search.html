@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlágioFlix</title>
+    <link rel="stylesheet" href="styleSearch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../assets/img/img-page.png" type="image/png">
+</head>
+<body class="flex-between">
+    <header id="cabeçalho">
+        <div class="linha-header"></div>
+    </header>
+    <header>
+        <section id="pesquisa">
+            <div class="flex-between">
+            <button id="botao-voltar"><i class="fa-solid fa-arrow-right fa-rotate-180 fa-lg" style="color: #ffffff;"></i></button>
+            <button id="botao-pesquisa" onclick="filtrarFilmes()"><i class="fa-solid fa-magnifying-glass fa-rotate-90 fa-lg" style="color: #ffffff;"></i></button>
+            <input type="text" id="busca" placeholder="Digite o nome do filme">
+            </div>
+            <div class="linha"></div>
+            <div class="flex">
+                <div id="texto-cat">Categorias: </div>
+                <form id="filtro-form">
+                <label for="categoria">
+                <select class="flex" id="categoria" multiple>
+                    <option id="categorias" value="Todos">Todos</option>
+                    <option id="categorias" value="Ação">Ação</option>
+                    <option id="categorias" value="Comédia">Comédia</option>
+                    <option id="categorias" value="Ficção Científica">Ficção Científica</option>
+                    <option id="categorias" value="Família">Família</option>
+                    <option id="categorias" value="Drama">Drama</option>
+                    <option id="categorias" value="Terror">Terror</option>
+                    <option id="categorias" value="Fantasia">Fantasia</option>
+                    <option id="categorias" value="Aventura">Aventura</option>
+                    <option id="categorias" value="Suspense">Suspense</option>
+                </select>
+                <button id="botao-filtrar" type="submit" onclick="filtrarFilmes()">Filtrar</button>
+                </label>
+                </form>
+            </div>
+        </section>
+    </header>
+    <main class="filmes">
+        <div id="resultados"></div>
+    </main>
+    <section id="logo">
+        <button id="botao-logo">PlágioFlix</button>
+    </section>
+    <script src="search.js"></script>
+</body>
+</html>
